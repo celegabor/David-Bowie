@@ -1,0 +1,91 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 400px; 
+    width: 300px; 
+    display: flex; 
+    align-items: center;
+    position: relative;
+    transition: all 0.3s linear;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.box:hover{
+    filter: drop-shadow(0 0 15px gray);
+}
+
+.scritte{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    display: inline;
+    text-align: center;
+    top: 80%;
+    left: 0;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.play{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    display: inline-block;
+    top: 82%;
+    left: -40px;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.box:hover .play{
+    opacity: 1;
+    left: 20px;
+    font-size: 2em;
+}
+
+.box:hover .scritte{
+    opacity: 0;
+    left: 40%;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+    border-radius: 20px;
+}
+
+.triangle {
+    margin: 17px 0 0 18px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 8px 0 8px 15px;
+    border-color: transparent transparent transparent #FFFFFF;
+    transform: rotate(0deg);
+    font-size: 0.3em;
+ }
+
+ .filtro{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(6,5,9,1) 5%, transparent 37%, transparent 100%, rgba(0,212,255,1) 100%);
+
+ }
